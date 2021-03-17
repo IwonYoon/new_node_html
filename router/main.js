@@ -11,7 +11,25 @@ module.exports = function(app) {
      });
      app.get('/about',function(req,res){
         res.render('about.html');
-    });
+      });
+      app.get('/gallery',function(req,res){
+         res.render('gallery.html')
+      });
+      app.get('/full-width',function(req,res){
+         res.render('full-width.html')
+      });
+      app.get('/sidebar-left',function(req,res){
+         res.render('sidebar-left.html')
+      });
+      app.get('/sidebar-right',function(req,res){
+         res.render('sidebar-right.html')
+      });
+      app.get('/basic-grid',function(req,res){
+         res.render('basic-grid.html')
+      });
+      app.get('/font-icons',function(req,res){
+         res.render('font-icons.html')
+      });
      
     app.get('/listall', function (req, res) {
       //res.render('about.html');
